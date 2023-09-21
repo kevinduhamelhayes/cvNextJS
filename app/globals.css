@@ -21,3 +21,15 @@
   background-size: 200% 200%;
   animation: gradientAnimation 3s linear infinite;
 }
+.animate-slide-from-left {
+  animation: slideFromLeft 1s forwards;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
