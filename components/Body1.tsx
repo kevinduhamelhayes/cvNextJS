@@ -1,12 +1,12 @@
 import React from "react";
 
 import {Card, CardBody, Image, Button, Progress} from "@nextui-org/react";
-import {HeartIcon} from "./HeartIcon";
-import {PauseCircleIcon} from "./PauseCircleIcon";
-import {NextIcon} from "./NextIcon";
-import {PreviousIcon} from "./PreviousIcon";
-import {RepeatOneIcon} from "./RepeatOneIcon";
-import {ShuffleIcon} from "./ShuffleIcon";
+import {HeartIcon} from "./icons/HeartIcon";
+import {PauseCircleIcon} from "./icons/PauseCircleIcon";
+import {NextIcon} from "./icons/NextIcon";
+import {PreviousIcon} from "./icons/PreviousIcon";
+import {RepeatOneIcon} from "./icons/RepeatOneIcon";
+import {ShuffleIcon} from "./icons/ShuffleIcon";
 // Desc: Stack of technologies used in the project
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay} from "swiper/modules"
 import "swiper/css"
@@ -58,6 +58,10 @@ export default function App() {
         }}
         className="h-[400px] md:h-[400px] w-full "
         navigation
+        autoplay={{
+          delay: 15000,
+          disableOnInteraction: false,
+        }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >

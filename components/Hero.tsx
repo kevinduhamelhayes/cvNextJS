@@ -41,8 +41,8 @@ const Hero = () => {
       
       <div className="relative z-30 md:top-[60px] p-4 md:p-10 text-white">
         <div className='flex flex-col max-w-2xl ml-6 md:ml-20 gap-8'>
-          <div className='flex flex-row gap-4 animate-slide-from-left'>
-            <h1 className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-500 animate-gradient-x">Kevin Duhamel</h1>
+          <div className='flex flex-row gap-4 animate-fade-right animate-once animate-ease-linear animate-duration-1000 animate-delay-0 animate-normal animate-fill-both'>
+            <h1 className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-500 ">Kevin Duhamel</h1>
           </div>
           {/* Contenido del Hero 
           <h2 className='text-3xl font-extrabold bg-clip-text text-white'>Frontend Dev</h2>*/}

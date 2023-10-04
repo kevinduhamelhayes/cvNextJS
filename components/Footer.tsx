@@ -11,7 +11,7 @@ import {
   FaYoutube,
 } from "react-icons/fa"
 import { IoHammer } from "react-icons/io5"
-import { AcmeLogo } from "./AcmeLogo.jsx"
+import { AcmeLogo } from "./icons/AcmeLogo.jsx"
 
 const Footer1 = () => {
   return (
