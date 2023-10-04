@@ -1428,7 +1428,7 @@
     "@nextui-org/react-rsc-utils" "2.0.9"
     "@nextui-org/shared-utils" "2.0.3"
 
-"@nextui-org/react@^2.1.12":
+"@nextui-org/react@^2.1.13":
   version "2.1.13"
   resolved "https://registry.yarnpkg.com/@nextui-org/react/-/react-2.1.13.tgz#aa98f8f2f10a296ac5a188136438f568a7d9261d"
   integrity sha512-NXlQhRKRK+XW9RbRUQiENN/Lk6zxWaWNu82Qz0zs6IuBY83iPFCCKXI7bDDAlcKud+/KlGBuji6GtaKJQJskqA==
@@ -7096,6 +7096,11 @@ tailwind-variants@^0.1.14:
   integrity sha512-qfOkSGP+cSolTTkJboldGmiM+w5uE77pazCRkwixEBsuaml9CmhN0E8qgH7QnZNmOTVSsgRK1tn/MsKOvOKVWA==
   dependencies:
     tailwind-merge "^1.13.2"
+
+tailwindcss-animated@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/tailwindcss-animated/-/tailwindcss-animated-1.0.1.tgz#a2ab097848b5802dd824f65d65f2840fc5ec5c7e"
+  integrity sha512-u5wusj89ZwP8I+s8WZlaAd7aZTWBN/XEG6QgMKpkIKmAf3xP1A6WYf7oYIKmGaB10UAQaSqWopi/i1ozzZEs8Q==
 
 tailwindcss@3.3.3, tailwindcss@^3.2.7:
   version "3.3.3"

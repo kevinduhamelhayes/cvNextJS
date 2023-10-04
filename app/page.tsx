@@ -6,6 +6,8 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Stack from '@/components/Stack';
 import Body1 from '@/components/Body1';
+import CallToAction from '@/components/CallToAction';
+import Section from '@/components/Section';
 {/*
 
 import Body from '@/components/Body';
@@ -15,7 +17,6 @@ import Swipper2 from '@/components/Swipper2';
 import Swipper from '@/components/Swipper';
 import Services from '@/components/Services';
 import Transparency from '@/components/Transparencia';
-import CallToAction from '@/components/CallToAction';
 import PaymentMethods from '@/components/PaymentMethods';
 import CardsPrices from '@/components/CardsPrices';
 */}
@@ -29,20 +30,16 @@ export default function Home() {
         <Hero />
         <Body1 />
         <Stack/>
-
         {/*
         <Services />
         <Transparency />
         <PaymentMethods />
         <CardsPrices />
-        <CallToAction />
-        
+
         <Cards />
-        <Body />
-        <Swipper/>
-        <Swipper2/>
-        <Section />
         */}
+        <CallToAction />
+        <Section />
         <Footer />
       </main>
     </NextUIProvider>
