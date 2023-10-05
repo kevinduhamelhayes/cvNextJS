@@ -2,8 +2,11 @@
 import useObserver from "@/hooks/useObserver"
 import { useEffect, useState } from "react"
 import { Card, CardHeader, CardBody, Image, CardFooter } from "@nextui-org/react";
+interface NewContent2Props {
+    className?: string;  // Puede ser string o undefined
+}
 
-const NewContent2 = ({ className }) => {
+const NewContent2: React.FC<NewContent2Props> = ({ className }) => {
     const [ref, inView] = useObserver({ threshold: 0.7 })
     const [isInView, setIsInView] = useState(false)
     useEffect(() => {
@@ -17,7 +20,10 @@ const NewContent2 = ({ className }) => {
             <ul>
     <li className='mb-6'>
         <h4 className='text-xl font-semibold'>Mover las Manitas, Más Que un Lema</h4>
-        <p className='text-lg'>Inspirado por referentes como Midudev, adopté el lema "mover las manitas" como filosofía propia. En cada línea de código, busco la mejora continua con pasion por crear soluciones innovadoras y efectivas.</p>
+        <p className='text-lg'>
+  Inspirado por referentes como Midudev, adopté el lema &quot;mover las manitas&quot; como filosofía propia. En cada línea de código, busco la mejora continua con pasión por crear soluciones innovadoras y efectivas.
+</p>
+
     </li>
     <li className='mb-6'>
         <h4 className='text-xl font-semibold'>Aprendizaje Constante</h4>

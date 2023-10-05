@@ -31,15 +31,15 @@ export default function Stack() {
             spaceBetween: 10,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 10,
           },
           1280: {
-            slidesPerView: 6,
+            slidesPerView: 5,
             spaceBetween: 10,
           },
         }}
-        className="h-[200px] md:h-[150px] w-full "
+        className="h-[200px] md:h-[250px] w-full "
         navigation
         
         autoplay={{
@@ -50,46 +50,44 @@ export default function Stack() {
         onSlideChange={() => console.log("slide change")}
       >
         <SwiperSlide>
-        <div className="flex flex-col items-center m-8">
-        <img src="/svgs/nextjs-2.svg" alt="Cafesito" className="w-56 h-24 hover:scale-110 transition-transform duration-300 pb-4" />
-          <p className="text-lg font-semibold hidden">Twitter</p>
-        </div>
-        </SwiperSlide>
-      <SwiperSlide>
-
-        <div className="flex flex-col items-center m-8 ">
-        <img src="/svgs/react-2.svg" alt="Instagram" className="w-56 h-24 hover:scale-110 transition-transform duration-300 pb-4" />
-          <p className="text-lg font-semibold hidden">Instagram</p>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="flex flex-col items-center m-8">
-        <img src="/svgs/github-icon.svg" alt="Cafesito" className="w-56 h-24 hover:scale-110 transition-transform duration-300 pb-4" />
-          <p className="text-lg font-semibold hidden">Porn hub</p>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="fflex flex-col items-center m-8">
-        <img src="./svgs/javascript-1.svg" alt="Cafesito" className="w-56 h-24 hover:scale-110 transition-transform duration-300 pb-4" />
-          <p className="text-lg font-semibold hidden">Porn hub</p>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-      
-        <div className="flex flex-col items-center m-8">
-        <img src="./svgs/html-1.svg" alt="Cafesito" className="w-56 h-24 hover:scale-110 transition-transform duration-300 pb-4" />
-          <p className="text-lg font-semibold hidden">Porn hub</p>
-        </div>
-        </SwiperSlide>
-      <SwiperSlide>
-        <div className="flex flex-col items-center m-8">
-        <img src="./svgs/css-3.svg" alt="Cafesito" className="w-56 h-24 hover:scale-110 transition-transform duration-300 pb-4" />
-          <p className="text-lg font-semibold hidden">Porn hub</p>
-        </div>
+            <div className="flex flex-col items-center m-8">
+              <Image src="/svgs/nextjs-2.svg" alt="Next.js Logo" width={224} height={96} className="hover:scale-110 transition-transform duration-300 pb-4" />
+              <p className="text-lg font-semibold hidden">Next.js</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center m-8">
+              <Image src="/svgs/react-2.svg" alt="React Logo" width={100} height={80} className="hover:scale-110 transition-transform duration-300 pb-4" />
+              <p className="text-lg font-semibold hidden">React</p>
+            </div>
         </SwiperSlide>
         <SwiperSlide>
         <div className="flex flex-col items-center m-8">
-        <img src="./svgs/tailwindcss.svg" alt="Cafesito" className="w-56 h-24 hover:scale-110 transition-transform duration-300 pb-4" />
+        <Image src="/svgs/github-icon.svg" alt="GitHub Icon" width={110} height={96} className="hover:scale-110 transition-transform duration-300 pb-4" />
+    <p className="text-lg font-semibold hidden">GitHub</p>
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div className="flex flex-col items-center m-8">
+    <Image src="/svgs/javascript-1.svg" alt="JavaScript Logo" width={100} height={96} className="hover:scale-110 transition-transform duration-300 pb-4" />
+    <p className="text-lg font-semibold hidden">JavaScript</p>
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div className="flex flex-col items-center m-8">
+    <Image src="/svgs/html-1.svg" alt="HTML5 Logo" width={100} height={96} className="hover:scale-110 transition-transform duration-300 pb-4" />
+    <p className="text-lg font-semibold hidden">HTML5</p>
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div className="flex flex-col items-center m-8">
+    <Image src="/svgs/css-3.svg" alt="CSS3 Logo" width={100} height={96} className="hover:scale-110 transition-transform duration-300 pb-4" />
+    <p className="text-lg font-semibold hidden">CSS3</p>
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div className="flex flex-col items-center m-8">
+    <Image src="/svgs/tailwindcss.svg" alt="TailwindCSS Logo" width={220} height={96} className="hover:scale-110 transition-transform duration-300 pb-4" />
           <p className="text-lg font-semibold hidden">Porn hub</p>
         </div>
         </SwiperSlide>

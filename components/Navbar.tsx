@@ -2,8 +2,6 @@
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
 
-import {SearchIcon} from "./SearchIcon.jsx";
-import { ThemeSwitcher } from "./ThemeSwitcher";
 
 const Component = () => {
 

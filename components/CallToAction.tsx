@@ -20,7 +20,7 @@ export default function CallToAction() {
           <p className="max-w-xl text-2xl font-semibold">
             He aprendido que el crecimiento proviene de la colaboración. Cada línea de código refleja no solo mi esfuerzo sino el apoyo del equipo con el que trabajo. ¿Listo para unirte a esta aventura de código conmigo?
           </p>
-          <Button color="success" size="large" className=" px-12 py-6 text-2xl text-white font-bold">
+          <Button color="success" className=" px-12 py-6 text-2xl text-white font-bold">
             Contáctame
           </Button>
         </div>

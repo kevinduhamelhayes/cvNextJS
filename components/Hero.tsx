@@ -13,7 +13,7 @@ const Hero = () => {
   useEffect(() => {
     if (!animationStarted) {
       setAnimationStarted(true);
-      const chars = [...fullDescription];
+      const chars = Array.from(fullDescription);
       chars.map((char, index) => {
         setTimeout(() => {
           setDescription((prev) => prev + char);

@@ -2,8 +2,11 @@
 import useObserver from "@/hooks/useObserver"
 import { useEffect, useState } from "react"
 import { Card, CardHeader, CardBody, Image, CardFooter, Button } from "@nextui-org/react";
+interface NewContent3Props {
+    className?: string;  // Puede ser string o undefined
+}
 
-const NewContent3 = ({ className }) => {
+const NewContent3: React.FC<NewContent3Props> = ({ className }) => {
     const [ref, inView] = useObserver({ threshold: 0.7 })
     const [isInView, setIsInView] = useState(false)
     
@@ -18,18 +21,19 @@ const NewContent3 = ({ className }) => {
             <CardBody className='p-6 w-full lg:w-[50%]'>
             <ul>
     <li className='mb-6'>
-        <h4 className='text-xl font-semibold'>Ahorra dinero y tiempo</h4>
-        <p className='text-lg'>Con nuestra solución, puedes reducir costos y optimizar procesos. Menos tiempo gestionando comandas significa más tiempo para enfocarte en lo que mejor sabes hacer: cocinar.</p>
+        <h4 className='text-xl font-semibold'>Experiencia Individual o en Equipo</h4>
+        <p className='text-lg'>Tienes la flexibilidad de contar con mis servicios en solitario, respaldado por años de experiencia y formación continua. Pero si lo necesitas, mi equipo está listo para sumarse y aportar su expertise.</p>
     </li>
     <li className='mb-6'>
-        <h4 className='text-xl font-semibold'>Gestión automatizada de comandas</h4>
-        <p className='text-lg'>Deja que nuestra plataforma maneje las comandas por ti. Con un sistema digital, los errores se reducen y la eficiencia aumenta.</p>
+        <h4 className='text-xl font-semibold'>Desarrollo Móvil a tu Alcance</h4>
+        <p className='text-lg'>Si buscas soluciones móviles, puedo conectar con expertos en React Native para crear aplicaciones iOS y Android de alto rendimiento. Tu visión, transformada en una app que tus usuarios amarán.</p>
     </li>
     <li className='mb-6'>
-        <h4 className='text-xl font-semibold'>Menos personal, más eficiencia</h4>
-        <p className='text-lg'>Nuestro sistema puede reducir la necesidad de tantos mozos, permitiéndote operar de manera más ágil y ahorrar en costos laborales. Tus clientes disfrutarán de un servicio más rápido y tú de un negocio más rentable.</p>
+        <h4 className='text-xl font-semibold'>Trayectoria en Software Factory</h4>
+        <p className='text-lg'>Mi paso por la software factory Devink me dotó de habilidades y experiencias invaluables. Sé cómo trabajar en equipos multidisciplinarios y llevar proyectos de software al éxito.</p>
     </li>
 </ul>
+
 
             </CardBody>
             <CardFooter className='w-full p-0 m-0 lg:w-[50%] rounded-l-none relative h-full'>

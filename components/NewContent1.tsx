@@ -2,10 +2,14 @@
 import useObserver from "@/hooks/useObserver"
 import { useEffect, useState } from "react"
 import { Card, CardHeader, CardBody, Image, CardFooter } from "@nextui-org/react";
+interface NewContent1Props {
+    className?: string;  // Puede ser string o undefined
+}
 
-const NewContent1 = ({ className }) => {
+const NewContent1 = ({ className}) => {
     const [ref, inView] = useObserver({ threshold: 0.7 })
     const [isInView, setIsInView] = useState(false)
+   
     useEffect(() => {
         if (inView) {
           setIsInView(true)

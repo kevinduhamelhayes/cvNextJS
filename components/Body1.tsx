@@ -157,6 +157,8 @@ export default function App() {
                 onPress={() => setLiked((v) => !v)}
               >
                 <HeartIcon
+                  width={20}
+                  height={20}
                   className={liked ? "[&>path]:stroke-transparent" : ""}
                   fill={liked ? "currentColor" : "none"}
                 />
@@ -181,46 +183,47 @@ export default function App() {
             </div>
 
             <div className="flex w-full items-center justify-center">
-              <Button
-                isIconOnly
-                className="data-[hover]:bg-foreground/10"
-                radius="full"
-                variant="light"
-              >
-                <RepeatOneIcon className="text-foreground/80" />
-              </Button>
-              <Button
-                isIconOnly
-                className="data-[hover]:bg-foreground/10"
-                radius="full"
-                variant="light"
-              >
-                <PreviousIcon />
-              </Button>
-              <Button
-                isIconOnly
-                className="w-auto h-auto data-[hover]:bg-foreground/10"
-                radius="full"
-                variant="light"
-              >
-                <PauseCircleIcon size={54} />
-              </Button>
-              <Button
-                isIconOnly
-                className="data-[hover]:bg-foreground/10"
-                radius="full"
-                variant="light"
-              >
-                <NextIcon />
-              </Button>
-              <Button
-                isIconOnly
-                className="data-[hover]:bg-foreground/10"
-                radius="full"
-                variant="light"
-              >
-                <ShuffleIcon className="text-foreground/80" />
-              </Button>
+            <Button
+  isIconOnly
+  className="data-[hover]:bg-foreground/10"
+  radius="full"
+  variant="light"
+>
+  <RepeatOneIcon className="text-foreground/80" width={20} height={20} />
+</Button>
+<Button
+  isIconOnly
+  className="data-[hover]:bg-foreground/10"
+  radius="full"
+  variant="light"
+>
+  <PreviousIcon width={20} height={20} />
+</Button>
+<Button
+  isIconOnly
+  className="w-auto h-auto data-[hover]:bg-foreground/10"
+  radius="full"
+  variant="light"
+>
+  <PauseCircleIcon size={54} width={20} height={20} />
+</Button>
+<Button
+  isIconOnly
+  className="data-[hover]:bg-foreground/10"
+  radius="full"
+  variant="light"
+>
+  <NextIcon width={20} height={20} />
+</Button>
+<Button
+  isIconOnly
+  className="data-[hover]:bg-foreground/10"
+  radius="full"
+  variant="light"
+>
+  <ShuffleIcon className="text-foreground/80" width={20} height={20} />
+</Button>
+
             </div>
           </div>
         </div>
