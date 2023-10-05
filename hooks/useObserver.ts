@@ -5,15 +5,18 @@ type ObserverOptions = {
   rootMargin?: string
   threshold?: number | number[]
 }
+interface ObserverParams {
+  options: ObserverOptions
+  elementRef: React.RefObject<HTMLElement>
+}
 
 
-export default function useObserver (options: ObserverOptions){
-  const [ref, setRef] = useState(null)
+export default function useObserver (options, elementRef){
   const [inView, setInView] = useState(false)
 
   useEffect(() => {
 
-    if (!ref) return
+    if (!elementRef) return
 
     const observer = new IntersectionObserver(([entry]) => {
 
@@ -21,9 +24,9 @@ export default function useObserver (options: ObserverOptions){
 
     }, options)
 
-    observer.observe(ref)
+    observer.observe(elementRef.current)
     return () => observer.disconnect()
-  }, [ref, options])
+  }, [elementRef, options])
 
-  return [setRef, inView]
+  return  {inView}
 }

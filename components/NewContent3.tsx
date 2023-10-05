@@ -1,23 +1,25 @@
 "use client"
 import useObserver from "@/hooks/useObserver"
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Card, CardHeader, CardBody, Image, CardFooter, Button } from "@nextui-org/react";
 interface NewContent3Props {
     className?: string;  // Puede ser string o undefined
 }
 
-const NewContent3: React.FC<NewContent3Props> = ({ className }) => {
-    const [ref, inView] = useObserver({ threshold: 0.7 })
+const NewContent3= ({ className }: NewContent3Props) => {
+    const elementRef = useRef(null)
+    const options = {threshold: 0.7}
+    const { inView }= useObserver(options, elementRef)
     const [isInView, setIsInView] = useState(false)
-    
+ 
     useEffect(() => {
         if (inView) {
           setIsInView(true)
         }
-    }, [inView]);
-
+      }, [inView])
+ 
     return (
-        <Card ref={ref} className={`flex flex-col-reverse p-0 lg:flex-row w-full lg:w-[1300px] min-h-[488px] lg:h-[400px] bg-white mt-20 rounded-xl shadow-2xl shadow-slate-600 mx-auto overflow-hidden ${className} ${ isInView ? ' animate-fade-right animate-once animate-duration-500 animate-delay-200 animate-ease-linear ' : 'opacity-0' }`}>
+        <Card ref={elementRef} className={`flex flex-col-reverse p-0 lg:flex-row w-full lg:w-[1300px] min-h-[488px] lg:h-[400px] bg-white mt-20 rounded-xl shadow-2xl shadow-slate-600 mx-auto overflow-hidden ${className} ${ isInView ? ' animate-fade-right animate-once animate-duration-500 animate-delay-200 animate-ease-linear ' : 'opacity-0' }`}>
             <CardBody className='p-6 w-full lg:w-[50%]'>
             <ul>
     <li className='mb-6'>

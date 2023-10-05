@@ -1,13 +1,15 @@
 "use client"
 import useObserver from "@/hooks/useObserver"
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Card, CardHeader, CardBody, Image, CardFooter } from "@nextui-org/react";
 interface NewContent1Props {
     className?: string;  // Puede ser string o undefined
 }
 
-const NewContent1 = ({ className}) => {
-    const [ref, inView] = useObserver({ threshold: 0.7 })
+const NewContent1 = ({ className } : NewContent1Props) => {
+    const elementRef = useRef(null)
+    const options = { threshold: 0.7 }
+    const { inView }= useObserver(options, elementRef)
     const [isInView, setIsInView] = useState(false)
    
     useEffect(() => {
@@ -17,7 +19,7 @@ const NewContent1 = ({ className}) => {
       }, [inView])
     return (
         <Card 
-    ref={ref} 
+    ref={elementRef} 
     id='Nosotros'  
     className={`flex flex-col lg:flex-row w-full lg:w-[1300px] min-h-[520px] lg:h-[400px] p-0 bg-white mt-20 rounded-xl shadow-2xl shadow-slate-600 mx-auto overflow-hidden ${className} ${
       isInView ? 'animate-fade-left animate-once animate-duration-500 animate-delay-200 animate-ease-linear' : "opacity-0"
