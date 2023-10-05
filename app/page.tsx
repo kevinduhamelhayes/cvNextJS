@@ -20,14 +20,16 @@ export default function Home() {
       <main className="max-w-full relative flex flex-col items-center h-full bg-black ">
         <Navbar />
         <Hero />
+        <Stack/>
         <div className='m-4 md:m-10 scroll-smooth'>
         <NewContent2 />
         <NewContent1 />
         <NewContent3 />
         </div>
-        <Body1 />
-        <Stack/>
+        
+        
         <Transparency />
+        <Body1 />
         <CallToAction />
         <Section />
         <Footer />

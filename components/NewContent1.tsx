@@ -6,7 +6,7 @@ const NewContent1 = () => {
         <Card id='Nosotros' className='flex flex-col lg:flex-row w-full lg:w-[1300px] min-h-[485px] lg:h-[400px] p-0 bg-white mt-20 rounded-xl shadow-2xl shadow-slate-600 mx-auto overflow-hidden animate-fade-left animate-once animate-duration-500 animate-delay-200 animate-ease-linear'>
             <CardFooter className='w-full h-[50%] lg:w-[50%] md:h-full rounded-r-none flex justify-center p-0 m-0'>
             <Image
-                src="/images/marielle-ursua-wRrhYoqYIvM-unsplash.jpg"
+                src="/programing/WhatsApp Image 2023-10-04 at 7.37.29 PM.jpeg"
                 alt="OrderFusionApp"
             className=' bg-cover object-contain rounded-lg rounded-l-none  p-0 m-0 md:h-[900px] z-0' />
             </CardFooter>

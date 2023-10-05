@@ -24,18 +24,18 @@ export default function App() {
   const [liked, setLiked] = React.useState(false);
 
   return (
-<Card className="relative border-none bg-background/90 dark:bg-default-100/50 w-full rounded-none items-center justify-center h-[500px] max-w-full">
+<Card className="relative border-none bg-background/90 dark:bg-default-100/50 w-full rounded-none items-center justify-center h-[800px] max-w-full">
   <video autoPlay muted loop className="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover">
     <source src="/programing/pexels-tima-miroshnichenko-5377685 (2160p).mp4" type="video/mp4" />
     Tu navegador no soporta el elemento de video.
   </video>
     <Card
       isBlurred
-      className="border-none bg-background/90 dark:bg-default-100/50 max-w-[1200px] w-[1000px] items-center justify-center h-[400px] flex flex-col"
+      className="border-none bg-background/90 dark:bg-default-100/50 max-w-[1200px] w-[1200px] items-center justify-center h-[550px] flex flex-col"
     >
-      <CardBody className="flex flex-col w-full h-full justify-center gap-10" >
-        <div className="flex flex-row justify-evenly items-center gap-10 px-6 ">
-        <section className=" w-[900px] px-0 h-[500px] bg-inherit md:h-[350px] overflow-hidden flex items-center overflow-y-hidden ">
+      <CardBody className="flex flex-col w-full h-[550px] justify-center gap-10" >
+        <div className="flex flex-row justify-evenly items-center gap-10 px-6 h-[550] ">
+        <section className=" w-[900px] px-0 h-[550px] bg-inherit md:h-[550px] overflow-hidden flex items-center overflow-y-hidden ">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         breakpoints={{
@@ -56,7 +56,7 @@ export default function App() {
             spaceBetween: 10,
           },
         }}
-        className="h-[400px] md:h-[400px] w-full "
+        className="h-[400px] md:h-[550px] w-full "
         navigation
         autoplay={{
           delay: 15000,

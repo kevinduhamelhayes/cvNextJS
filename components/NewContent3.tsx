@@ -23,7 +23,7 @@ const NewContent3 = () => {
 
             </CardBody>
             <CardFooter className='w-full p-0 m-0 lg:w-[50%] rounded-l-none relative h-full'>
-                <Image src="/images/pexels-narco-pertama-660282.jpg"  alt='depto1' className='bg-cover rounded-l-none object-fill h-[488px] m-0 p-0  ' />
+                <Image src="/programing/WhatsApp Image 2023-09-22 at 4.33.21 PM.jpeg"  alt='depto1' className='bg-cover rounded-l-none object-contain w-full h-[860px] m-0 p-0  ' />
             </CardFooter>
         </Card>
     )

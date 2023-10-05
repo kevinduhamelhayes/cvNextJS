@@ -1,14 +1,31 @@
-import { RiScales3Line } from 'react-icons/ri';
+import { FaUsers } from 'react-icons/fa';
+import { Card, CardHeader, CardBody, Image, CardFooter } from "@nextui-org/react";
 
 export default function Transparency() {
   return (
-    <div className="relative py-12 md:py-24 bg-gray-900 text-white w-full h-[800px]">
-      <div className='flex flex-col items-center justify-center w-full h-full'>
-      <h2 className="text-4xl font-bold mb-6 text-center">Transparencia Total</h2>
-      <RiScales3Line size={70} className="mx-auto mb-6 hover:text-gray-400 transition-colors duration-300" />
-      <p className="text-center max-w-xl text-xl font-semibold mx-auto">Ofrecemos balances mensuales detallados para que siempre sepas cómo están funcionando tus redes sociales.</p>
+    <div className="relative py-12 md:py-24 text-white w-full h-[1100px]">
+      {/* Imagen de fondo */}
+      <div className="absolute top-0 left-0 w-full h-full z-0">
+        <Image 
+          src="/programing/WhatsApp Image 2023-09-28 at 6.27.13 PM.jpeg" 
+          alt="Equipo de programadores trabajando juntos" 
+          width={1920}
+          className="max-h-[1400px] object-cover"
+        />
       </div>
-      <img src="/videos/img2.jpg" alt="Descripción de la imagen" className="absolute top-0 left-0 w-full h-full object-cover opacity-20" />
+
+      {/* Contenido del componente */}
+      <div className="relative flex items-center justify-center w-full h-[1100px] -top-24 z-10 bg-black bg-opacity-50">
+        <div className="flex flex-col items-center text-center space-y-6">
+          <h2 className="text-6xl font-bold">El Poder del Trabajo en Equipo</h2>
+          <FaUsers size={70} className="hover:text-gray-400 transition-colors duration-300" />
+          <p className="max-w-xl text-2xl font-semibold">
+  A lo largo de mi formacion, he aprendido que el verdadero crecimiento viene de la colaboración y el trabajo en equipo. Cada línea de código y cada desafío superado no son solo el reflejo de mi esfuerzo, sino también de la dedicación y apoyo inquebrantable del equipo que me acompaña. Juntos, transformamos ideas en realidad y enfrentamos los retos que la programación nos presenta día a día. Estoy profundamente agradecido por tener un equipo tan talentoso que me ayudo a formarme.
+</p>
+
+        </div>
+      </div>
     </div>
   );
 }
+
