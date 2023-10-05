@@ -1,9 +1,23 @@
-import React from 'react';
+"use client"
+import useObserver from "@/hooks/useObserver"
+import { useEffect, useState } from "react"
 import { Card, CardHeader, CardBody, Image, CardFooter } from "@nextui-org/react";
 
-const NewContent1 = () => {
+const NewContent1 = ({ className }) => {
+    const [ref, inView] = useObserver({ threshold: 0.7 })
+    const [isInView, setIsInView] = useState(false)
+    useEffect(() => {
+        if (inView) {
+          setIsInView(true)
+        }
+      }, [inView])
     return (
-        <Card id='Nosotros' className='flex flex-col lg:flex-row w-full lg:w-[1300px] min-h-[485px] lg:h-[400px] p-0 bg-white mt-20 rounded-xl shadow-2xl shadow-slate-600 mx-auto overflow-hidden animate-fade-left animate-once animate-duration-500 animate-delay-200 animate-ease-linear'>
+        <Card 
+    ref={ref} 
+    id='Nosotros'  
+    className={`flex flex-col lg:flex-row w-full lg:w-[1300px] min-h-[520px] lg:h-[400px] p-0 bg-white mt-20 rounded-xl shadow-2xl shadow-slate-600 mx-auto overflow-hidden ${className} ${
+      isInView ? 'animate-fade-left animate-once animate-duration-500 animate-delay-200 animate-ease-linear' : "opacity-0"
+    }`}>
             <CardFooter className='w-full h-[50%] lg:w-[50%] md:h-full rounded-r-none flex justify-center p-0 m-0'>
             <Image
                 src="/programing/WhatsApp Image 2023-10-04 at 7.37.29 PM.jpeg"
@@ -13,18 +27,19 @@ const NewContent1 = () => {
             <CardBody className='p-6 w-full lg:w-[50%]'>
             <ul>
     <li className='mb-6'>
-        <h4 className='text-xl font-semibold'>Adelantándonos al Futuro:</h4>
-        <p className='text-lg'>La era digital avanza a pasos agigantados. Con nuestro servicio de QR en la mesa, tu negocio no se quedará atrás. Ofrece una experiencia moderna e innovadora a tus clientes.</p>
+        <h4 className='text-xl font-semibold'>Inspiración desde Vercel:</h4>
+        <p className='text-lg'>Mi camino en JavaScript ha sido influenciado por grandes referentes como GoncyJS de Vercel. Mantenerme actualizado con las últimas tendencias y aprender de los mejores me ha permitido ofrecer soluciones vanguardistas.</p>
     </li>
     <li className='mb-6'>
-        <h4 className='text-xl font-semibold'>Menos Espera, Más Satisfacción:</h4>
-        <p className='text-lg'>Permite que tus clientes pidan directamente desde su mesa, reduciendo tiempos de espera y mejorando su experiencia en tu establecimiento.</p>
+        <h4 className='text-xl font-semibold'>Dominio en Tailwind:</h4>
+        <p className='text-lg'>Mi formación en TailwindCSS y TailwindAnimated no solo me ha proporcionado las herramientas para crear interfaces visuales impresionantes, sino también experiencias de usuario optimizadas y amigables.</p>
     </li>
     <li className='mb-6'>
-        <h4 className='text-xl font-semibold'>Confiabilidad Digital:</h4>
-        <p className='text-lg'>Nuestra plataforma es confiable y eficiente, con una tasa de cancelación del 0%. La transición al mundo digital nunca ha sido tan fácil y segura.</p>
+        <h4 className='text-xl font-semibold'>A la Vanguardia con NextUI:</h4>
+        <p className='text-lg'>Utilizando NextUI, he podido crear aplicaciones web modernas y eficientes, garantizando rendimiento y confiabilidad. La transición al mundo digital conmigo está respaldada por las mejores tecnologías y prácticas.</p>
     </li>
 </ul>
+
 
             </CardBody>
         </Card>

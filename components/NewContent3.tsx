@@ -1,10 +1,20 @@
-import React from 'react';
-import { Card, CardHeader, CardBody, Image, CardFooter } from "@nextui-org/react";
-import { Button } from "@nextui-org/react";
+"use client"
+import useObserver from "@/hooks/useObserver"
+import { useEffect, useState } from "react"
+import { Card, CardHeader, CardBody, Image, CardFooter, Button } from "@nextui-org/react";
 
-const NewContent3 = () => {
+const NewContent3 = ({ className }) => {
+    const [ref, inView] = useObserver({ threshold: 0.7 })
+    const [isInView, setIsInView] = useState(false)
+    
+    useEffect(() => {
+        if (inView) {
+          setIsInView(true)
+        }
+    }, [inView]);
+
     return (
-        <Card className='flex flex-col-reverse p-0 lg:flex-row w-full lg:w-[1300px] min-h-[488px] lg:h-[400px] bg-white mt-20 rounded-xl shadow-2xl shadow-slate-600 mx-auto overflow-hidden animate-rotate-y animate-once animate-duration-500 animate-delay-200 animate-ease-in-out'>
+        <Card ref={ref} className={`flex flex-col-reverse p-0 lg:flex-row w-full lg:w-[1300px] min-h-[488px] lg:h-[400px] bg-white mt-20 rounded-xl shadow-2xl shadow-slate-600 mx-auto overflow-hidden ${className} ${ isInView ? ' animate-fade-right animate-once animate-duration-500 animate-delay-200 animate-ease-linear ' : 'opacity-0' }`}>
             <CardBody className='p-6 w-full lg:w-[50%]'>
             <ul>
     <li className='mb-6'>

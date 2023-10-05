@@ -1,8 +1,12 @@
-import React from 'react';
+"use client"
+import useObserver from "@/hooks/useObserver"
+import { useEffect, useState } from "react"
 import Image from 'next/image';
 import { Accordion, AccordionItem, Card } from "@nextui-org/react";
 
 const NewContent = () => {
+    const [ref, inView] = useObserver({ threshold: 0.7 })
+    const [isInView, setIsInView] = useState(false)
     return (
         <Card className='flex flex-col w-[1300px] max-w-full min-h-[75%] max-h-100vh overflow-y-auto bg-white mt-20'>
             <div className='flex flex-row w-full'>
