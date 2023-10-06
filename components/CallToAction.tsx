@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardBody, Image, CardFooter, Button } from "@nextui-org/react";
-
+import ModalPersonal from "./ModalPersonal";
 export default function CallToAction() {
   return (
     <div className="relative md:py-24 text-white w-full md:h-[1000px]">
@@ -20,9 +20,7 @@ export default function CallToAction() {
           <p className="max-w-xl md:text-2xl font-semibold">
             He aprendido que el crecimiento proviene de la colaboración. Cada línea de código refleja no solo mi esfuerzo sino el apoyo del equipo con el que trabajo. ¿Listo para unirte a esta aventura de código conmigo?
           </p>
-          <Button color="success" className=" px-12 py-6 text-2xl text-white font-bold">
-            Contáctame
-          </Button>
+          <ModalPersonal/>
         </div>
       </div>
     </div>
