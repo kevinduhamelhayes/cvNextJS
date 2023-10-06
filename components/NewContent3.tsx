@@ -8,7 +8,7 @@ interface NewContent3Props {
 
 const NewContent3= ({ className }: NewContent3Props) => {
     const elementRef = useRef(null)
-    const options = {threshold: 0.7}
+    const options = {threshold: 0.5}
     const { inView }= useObserver(options, elementRef)
     const [isInView, setIsInView] = useState(false)
  
@@ -19,7 +19,7 @@ const NewContent3= ({ className }: NewContent3Props) => {
       }, [inView])
  
     return (
-        <Card ref={elementRef} className={`flex flex-col-reverse p-0 lg:flex-row w-full lg:w-[1300px] min-h-[488px] lg:h-[400px] bg-white mt-20 rounded-xl shadow-2xl shadow-slate-600 mx-auto overflow-hidden ${className} ${ isInView ? ' animate-fade-right animate-once animate-duration-500 animate-delay-200 animate-ease-linear ' : 'opacity-0' }`}>
+        <Card ref={elementRef} className={`flex flex-col-reverse p-0 lg:flex-row w-full lg:w-[1300px] min-h-[488px] lg:h-[400px] bg-white mt-20 mb-20 rounded-xl shadow-2xl shadow-slate-600 mx-auto overflow-hidden ${className} ${ isInView ? ' animate-fade-right animate-once animate-duration-500 animate-delay-200 animate-ease-linear ' : 'opacity-0' }`}>
             <CardBody className='p-6 w-full lg:w-[50%]'>
             <ul>
     <li className='mb-6'>
@@ -38,8 +38,8 @@ const NewContent3= ({ className }: NewContent3Props) => {
 
 
             </CardBody>
-            <CardFooter className='w-full p-0 m-0 lg:w-[50%] rounded-l-none relative h-full'>
-                <Image src="/programing/WhatsApp Image 2023-09-22 at 4.33.21 PM.jpeg"  alt='depto1' className='bg-cover rounded-l-none object-contain w-full h-[860px] m-0 p-0  ' />
+            <CardFooter className='w-full p-0 lg:w-[50%] rounded-b-none md:rounded-l-none relative h-full'>
+                <Image src="/programing/WhatsApp Image 2023-09-22 at 4.33.21 PM.jpeg"  alt='depto1' className='bg-cover rounded-none m-0 md:rounded-l-none object-cover  w-full md:h-[860px] md:ml-4 p-0  ' />
             </CardFooter>
         </Card>
     )

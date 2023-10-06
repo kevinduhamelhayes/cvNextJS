@@ -24,7 +24,8 @@ export default function App() {
   const [liked, setLiked] = React.useState(false);
 
   return (
-<Card className="relative border-none bg-background/90 dark:bg-default-100/50 w-full rounded-none items-center justify-center h-[800px] max-w-full">
+
+<Card className= "flex border-none bg-background/90 dark:bg-default-100/50 w-full rounded-none items-center justify-center h-[800px] max-w-full">
   <video autoPlay muted loop className="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover">
     <source src="/programing/pexels-tima-miroshnichenko-5377685 (2160p).mp4" type="video/mp4" />
     Tu navegador no soporta el elemento de video.
@@ -41,22 +42,21 @@ export default function App() {
         breakpoints={{
           450: {
             slidesPerView: 1,
-            spaceBetween: 10,
+
           },
           768: {
             slidesPerView: 1,
-            spaceBetween: 10,
+
           },
           1024: {
             slidesPerView: 1,
-            spaceBetween: 10,
+
           },
           1280: {
             slidesPerView: 1,
-            spaceBetween: 10,
           },
         }}
-        className="h-[400px] md:h-[550px] w-full "
+        className="h-[400px]  md:h-[550px] w-full "
         navigation
         autoplay={{
           delay: 15000,
@@ -143,11 +143,11 @@ export default function App() {
         </Swiper>
         </section>
           <div className="flex flex-col ">
-            <div className="flex justify-between items-start">
+            <div className="hidden md:flex justify-between items-start">
               <div className="flex flex-col gap-0">
                 <h3 className="font-semibold text-foreground/90">Algunos de mis Proyectos</h3>
                 <p className="text-small text-foreground/80">12 Hits</p>
-                <h1 className="text-large font-medium mt-2">Frontend Radio</h1>
+                <h1 className="text-large font-medium mt-2">Proyect Radio</h1>
               </div>
               <Button
                 isIconOnly

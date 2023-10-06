@@ -8,7 +8,7 @@ interface NewContent1Props {
 
 const NewContent1 = ({ className } : NewContent1Props) => {
     const elementRef = useRef(null)
-    const options = { threshold: 0.7 }
+    const options = { threshold: 0.5 }
     const { inView }= useObserver(options, elementRef)
     const [isInView, setIsInView] = useState(false)
    
@@ -24,11 +24,11 @@ const NewContent1 = ({ className } : NewContent1Props) => {
     className={`flex flex-col lg:flex-row w-full lg:w-[1300px] min-h-[520px] lg:h-[400px] p-0 bg-white mt-20 rounded-xl shadow-2xl shadow-slate-600 mx-auto overflow-hidden ${className} ${
       isInView ? 'animate-fade-left animate-once animate-duration-500 animate-delay-200 animate-ease-linear' : "opacity-0"
     }`}>
-            <CardFooter className='w-full h-[50%] lg:w-[50%] md:h-full rounded-r-none flex justify-center p-0 m-0'>
+            <CardFooter className='w-full h-[50%] lg:w-[50%] md:h-full flex rounded-b-none-none justify-center p-0 m-0'>
             <Image
                 src="/programing/WhatsApp Image 2023-10-04 at 7.37.29 PM.jpeg"
                 alt="OrderFusionApp"
-            className=' bg-cover object-contain rounded-lg rounded-l-none  p-0 m-0 md:h-[900px] z-0' />
+            className=' bg-cover object-contain md:rounded-l-none  p-0 m-0 md:h-[900px] z-0' />
             </CardFooter>
             <CardBody className='p-6 w-full lg:w-[50%]'>
             <ul>

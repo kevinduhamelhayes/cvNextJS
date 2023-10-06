@@ -22,12 +22,12 @@ export default function Stack() {
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         breakpoints={{
-          450: {
-            slidesPerView: 2,
+          500: {
+            slidesPerView: 1,
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 4,
+            slidesPerView: 2,
             spaceBetween: 10,
           },
           1024: {
@@ -87,7 +87,7 @@ export default function Stack() {
 </SwiperSlide>
 <SwiperSlide>
   <div className="flex flex-col items-center m-8">
-    <Image src="/svgs/tailwindcss.svg" alt="TailwindCSS Logo" width={220} height={96} className="hover:scale-110 transition-transform duration-300 pb-4" />
+    <Image src="/svgs/tailwindcss.svg" alt="TailwindCSS Logo" width={120} height={96} className="hover:scale-110 transition-transform duration-300 pb-4" />
           <p className="text-lg font-semibold hidden">Porn hub</p>
         </div>
         </SwiperSlide>

@@ -23,7 +23,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-[400px] md:h-[450px] w-full overflow-hidden">
+    <div className="relative h-[500px] md:h-[450px] w-full overflow-hidden">
       {/* Video de fondo */}
       <video
         autoPlay
@@ -44,11 +44,8 @@ const Hero = () => {
           <div className='flex flex-row gap-4 animate-fade-right animate-once animate-ease-linear animate-duration-1000 animate-delay-0 animate-normal animate-fill-both'>
             <h1 className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-500 ">Kevin Duhamel</h1>
           </div>
-          {/* Contenido del Hero 
-          <h2 className='text-3xl font-extrabold bg-clip-text text-white'>Frontend Dev</h2>*/}
           <p className="mt-10 md:mt-2 font-semibold text-lg">{description}</p>
 
-          {/* Espacio reservado para la imagen del desarrollador */}
           <div className="absolute right-0 top-1/4 w-1/3">
             
           </div>

@@ -26,8 +26,6 @@ export default function Home() {
         <NewContent1 />
         <NewContent3 />
         </div>
-        
-        
         <Transparency />
         <Body1 />
         <CallToAction />
