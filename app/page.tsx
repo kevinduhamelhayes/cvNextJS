@@ -13,6 +13,7 @@ import NewContent1 from '@/components/NewContent1';
 import NewContent2 from '@/components/NewContent2';
 import NewContent3 from '@/components/NewContent3';
 import Hero from '@/components/Hero';
+import Main  from '@/components/Main';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <main className="max-w-full relative flex flex-col items-center h-full bg-black ">
         <Navbar />
         <Hero />
+        <Main />
         <Stack/>
         <div className='m-4 md:m-10 scroll-smooth'>
         <NewContent2 />

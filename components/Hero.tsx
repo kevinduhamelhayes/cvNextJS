@@ -23,7 +23,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-[500px] md:h-[450px] w-full overflow-hidden">
+    <div className="relative h-[500px] md:h-[420px] w-full overflow-hidden">
       {/* Video de fondo */}
       <video
         autoPlay

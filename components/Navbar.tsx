@@ -6,7 +6,7 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nex
 const Component = () => {
 
   return (
-    <Navbar className="bg-black min-h-[110px] text-white shadow-md" position="static">
+    <Navbar className="bg-black min-h-[90px] text-white shadow-md" position="static">
       <NavbarBrand className="hidden sm:flex">
       <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-yellow-500 gradient-animated">Hello Word</span>
       </NavbarBrand>
