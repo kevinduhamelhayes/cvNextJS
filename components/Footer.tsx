@@ -25,7 +25,7 @@ const Footer1 = () => {
             <div className="flex items-center space-x-2 text-2xl"> <h1> Social Media </h1></div>
             <div className="flex flex-row gap-12">
               <Link
-                href="https://www.linkedin.com/in/kevin-duhamel-hayes-7a3b3b1b7/"
+                href="https://www.linkedin.com/in/kevin-duhamel-hayes/"
                 className="text-blue-400 transition-colors duration-200 font-semibold text-4xl"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -33,7 +33,7 @@ const Footer1 = () => {
                 <FaLinkedin />
               </Link>
               <Link
-                href="#"
+                href="https://github.com/kevinduhamelhayes"
                 className="text-purple-400 transition-colors duration-200 font-semibold text-4xl"
                 target="_blank"
                 rel="noopener noreferrer"
