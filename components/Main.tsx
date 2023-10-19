@@ -24,12 +24,12 @@ const Main = ({ className }: MainProps) => {
         <div className='my-4 text-sm '>
 
           <p className='italic'>&quot;Antes que nada, quiero agradecerte por ver mi perfil en línea. He creado no menos de 12 en distintas tecnologías y lenguajes de programación, pero desde noviembre de 2023, este es el más reciente.&quot;</p>
-          <p className='italic mt-4'>Si eres <strong>un recruiter</strong>, notarás que no califico mis tecnologías porque creo que no es buena práctica ponerse estrellas a uno mismo. Pero si quieres saber más de mí, puedes ver mi LinkedIn o mi GitHub; ambos están en el footer de esta página y son activos.</p>
-          <p className='italic mt-4'>
+          <p className='italic mt-2 xl:mt-4'>Si eres <strong>un recruiter</strong>, notarás que no califico mis tecnologías porque creo que no es buena práctica ponerse estrellas a uno mismo. Pero si quieres saber más de mí, puedes ver mi LinkedIn o mi GitHub; ambos están en el footer de esta página y son activos.</p>
+          <p className='italic mt-2 xl:mt-4'>
             Tambien veras que tengo un stack principal MEARN y MERN pero incluyo un stack secundario de lenguajes y tecnologias que no uso a diario pero que se usar y que me gustan mucho (perdon a veces el exceso de euforia todo me parece fasinante en este mundo de ceros y unos).
           </p>
-          <p className='italic mt-4'>Personalmente como a todos nos agusta lo conocido de nuestro stack principal pero tambien estoy abierto a desafios en nuevas tecnologias y lenguajes asi que estoy a disposicion, tengo voluntad y soy muy proactivo manejo minimamente desde COBOL a RUST.... incluyendo Python y sus frameworks, manejo pip, cargo, npx, pnpm, npm, yarn. Con algo de voluntad debo admitir aprendi docker y kubernetes </p>
-          <p className='italic mt-4'>Completando con despliegues en Vercel, AWS, Cloud y Azure</p>
+          <p className='italic mt-2 xl:mt-4'>Personalmente como a todos nos agusta lo conocido de nuestro stack principal pero tambien estoy abierto a desafios en nuevas tecnologias y lenguajes asi que estoy a disposicion, tengo voluntad y soy muy proactivo manejo minimamente desde COBOL a RUST.... incluyendo Python y sus frameworks, manejo pip, cargo, npx, pnpm, npm, yarn. Con algo de voluntad debo admitir aprendi docker y kubernetes </p>
+          <p className='italic mt-2 xl:mt-4'>Completando con despliegues en Vercel, AWS, Cloud y Azure</p>
           <p className="mt-4">
             <strong >Diariamente sigo practicando y seguire para ser mejor en todo lo que pueda o en lo que mi trabajo me demande</strong>
           </p>
