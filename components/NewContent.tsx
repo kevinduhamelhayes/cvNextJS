@@ -6,7 +6,7 @@ import { Accordion, AccordionItem, Card } from "@nextui-org/react";
 
 const NewContent = () => {
     const elementRef = useRef(null)
-    const {inView} = useObserver({ threshold: 0.7 }, elementRef )
+    const {inView} = useObserver({ threshold: 0.2 }, elementRef )
     return (
         <Card ref={elementRef} className='flex flex-col w-[1300px] max-w-full min-h-[75%] max-h-100vh overflow-y-auto bg-white mt-20'>
             <div className='flex flex-row w-full'>

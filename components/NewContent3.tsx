@@ -8,7 +8,7 @@ interface NewContent3Props {
 
 const NewContent3= ({ className }: NewContent3Props) => {
     const elementRef = useRef(null)
-    const options = {threshold: 0.5}
+    const options = {threshold: 0.2}
     const { inView }= useObserver(options, elementRef)
     const [isInView, setIsInView] = useState(false)
  

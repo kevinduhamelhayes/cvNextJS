@@ -8,7 +8,7 @@ interface NewContent2Props {
 
 const NewContent2 = ({ className }: NewContent2Props) => {
      const elementRef = useRef(null)
-     const options = { threshold: 0.5 }
+     const options = { threshold: 0.2 }
     const { inView }= useObserver( options, elementRef)
     const [isInView, setIsInView] = useState(false)
  
