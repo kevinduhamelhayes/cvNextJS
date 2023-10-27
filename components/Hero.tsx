@@ -6,9 +6,6 @@ const Hero = () => {
   const [description, setDescription] = useState("");
   const [animationStarted, setAnimationStarted] = useState(false);
   const fullDescription = "Soy un desarrollador frontend especializado en la creación de interfaces de usuario dinámicas y visualmente atractivas. Con dominio en tecnologías como React, Next.js y NextUI, y habilidades en CSS y HTML, siempre busco implementar las mejores prácticas, incluyendo el diseño responsivo para asegurar una experiencia óptima en todos los dispositivos. "  ;
-  {/*Estoy familiarizado con metodologías ágiles como Scrum, y siempre me mantengo actualizado con las últimas tendencias en animaciones y transiciones. Mi misión es desarrollar soluciones frontend que sean estéticamente agradables y funcionalmente efectivas para los usuarios.*/
-
-  }
 
   useEffect(() => {
     if (!animationStarted) {
